@@ -9,9 +9,17 @@
 <body>
     <section class="dashboard-container">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
-            <div class="list_item1">
-                <ul>
+            <div class="logo">
+                <div class="logo-grid">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p>Dashboard</p>
+            </div>
+            <div class="list_item1-container">
+                <ul class="list-item1">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-outline</title><path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22" /></svg>
                         <a href="home">Home</a>
@@ -38,8 +46,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="list_item2">
-                <ul>
+            <div class="list_item2-container">
+                <ul class="list-item2">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cog-outline</title><path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" /></svg>
                         <a href="settings">Settings</a>
@@ -65,29 +73,35 @@
                     </div>
                     <div class="profile-name">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>alarm-light-outline</title><path d="M6,6.9L3.87,4.78L5.28,3.37L7.4,5.5L6,6.9M13,1V4H11V1H13M20.13,4.78L18,6.9L16.6,5.5L18.72,3.37L20.13,4.78M4.5,10.5V12.5H1.5V10.5H4.5M19.5,10.5H22.5V12.5H19.5V10.5M6,20H18A2,2 0 0,1 20,22H4A2,2 0 0,1 6,20M12,5A6,6 0 0,1 18,11V19H6V11A6,6 0 0,1 12,5M12,7A4,4 0 0,0 8,11V17H16V11A4,4 0 0,0 12,7Z" /></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-tie</title><path d="M12 3C14.21 3 16 4.79 16 7S14.21 11 12 11 8 9.21 8 7 9.79 3 12 3M16 13.54C16 14.6 15.72 17.07 13.81 19.83L13 15L13.94 13.12C13.32 13.05 12.67 13 12 13S10.68 13.05 10.06 13.12L11 15L10.19 19.83C8.28 17.07 8 14.6 8 13.54C5.61 14.24 4 15.5 4 17V21H20V17C20 15.5 18.4 14.24 16 13.54Z" /></svg>
-                        <h5>Morgan Oaklay</h5>
+                        <img src="./images/image (1).png" class="person-icon" alt="">
+                        <h4>Morgan Oaklay</h4>
                     </div>
                 </div>
                 <div class="lower-content">
                     <div class="left-name">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-tie</title><path d="M12 3C14.21 3 16 4.79 16 7S14.21 11 12 11 8 9.21 8 7 9.79 3 12 3M16 13.54C16 14.6 15.72 17.07 13.81 19.83L13 15L13.94 13.12C13.32 13.05 12.67 13 12 13S10.68 13.05 10.06 13.12L11 15L10.19 19.83C8.28 17.07 8 14.6 8 13.54C5.61 14.24 4 15.5 4 17V21H20V17C20 15.5 18.4 14.24 16 13.54Z" /></svg>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-tie</title><path d="M12 3C14.21 3 16 4.79 16 7S14.21 11 12 11 8 9.21 8 7 9.79 3 12 3M16 13.54C16 14.6 15.72 17.07 13.81 19.83L13 15L13.94 13.12C13.32 13.05 12.67 13 12 13S10.68 13.05 10.06 13.12L11 15L10.19 19.83C8.28 17.07 8 14.6 8 13.54C5.61 14.24 4 15.5 4 17V21H20V17C20 15.5 18.4 14.24 16 13.54Z" /></svg> -->
+                        <img src="./images/image (1).png" alt="">
                         <p class="morgan">
-                            <p>Hi there</p>
-                            <h4>Morgan Oakley(@morgan)</h4>
+                            <p>Hi there <br> <span>Morgan Oakley (@morgan)</span> </p>
                         </p>
                     </div>
                     <div class="nav">
                         <ul class="navList">
-                            <li>New</li>
-                            <li>Upload</li>
-                            <li>Share</li>
+                            <li><button type="button">New</button> </li>
+                            <li><button type="button">Upload</button></li>
+                            <li><button>Share</button></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div class="title-project">
+                <h4 class="pro">Your Project</h4>
+                <h4 class="ann">Announcements</h4>
+            </div>
+            
             <div class="project-container">
                 <div class="card-container">
+                    <!-- <h3>Your Projects</h3> -->
                     <div class="card">
                         <h2>Super Cool Project</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, est corporis aut ad harum dolores nobis veritatis recusandae dignissimos illum ratione ipsa eaque, impedit debitis atque expedita aliquam a repellat.</p>
@@ -133,8 +147,8 @@
                             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>source-fork</title><path d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" /></svg></li>
                         </ul>
                     </div>
-                    <div class="Money Maker">
-                         <h2>Super Cool Project</h2>
+                    <div class="card">
+                         <h2>Money Maker</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, est corporis aut ad harum dolores nobis veritatis recusandae dignissimos illum ratione ipsa eaque, impedit debitis atque expedita aliquam a repellat.</p>
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></li>
@@ -143,34 +157,38 @@
                         </ul>
                     </div>
                 </div>
-                <div class="announcements">
-                    <h3 class="announcement-title">Site Maintenance</h3>
-                    <p class="announcement-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus alias odit cupiditate id magni quis dolor? Ut ipsum necessitatibus, nam eaque natus, exercitationem perspiciatis ex tempora possimus quasi odit!</p>
-                    <hr class="line">
-                    <h3 class="announcement-title">Community Share Day</h3>
-                    <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod accusamus eos aperiam dolores tenetur non laboriosam soluta ea voluptatum ab perspiciatis ullam mollitia, voluptas at laborum, rem blanditiis eaque!</p>
-                    <hr class="line">
-                    <h3 class="announcement-title">Updated Privacy Policy</h3>
-                    <p class="announcement-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, sit veritatis! Consequuntur, cum. Error officiis dignissimos quis commodi, quod provident ipsum obcaecati ad vitae! Tempora aut et ducimus animi eum.</p>
+                <div class="announcement-side">
+                    <div class="announcement">
+                        <h3 class="announcement-title">Site Maintenance</h3>
+                        <p class="announcement-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus alias odit cupiditate id magni quis dolor? Ut ipsum necessitatibus, nam eaque natus, exercitationem perspiciatis ex tempora possimus quasi odit!</p>
+                        <hr class="line">
+                        <h3 class="announcement-title">Community Share Day</h3>
+                        <p class="announcement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod accusamus eos aperiam dolores tenetur non laboriosam soluta ea voluptatum ab perspiciatis ullam mollitia, voluptas at laborum, rem blanditiis eaque!</p>
+                        <hr class="line">
+                        <h3 class="announcement-title">Updated Privacy Policy</h3>
+                        <p class="announcement-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, sit veritatis! Consequuntur, cum. Error officiis dignissimos quis commodi, quod provident ipsum obcaecati ad vitae! Tempora aut et ducimus animi eum.</p>
+                    </div>
+                    <h4 class="trending-title">Trending</h4>
+                    <div class="trending">
+                        <div class="tegan">
+                            <img src="./images/image.png" alt="">
+                            <p>@tegan <br> World Peace Builder</p>
+                        </div>
+                        <div class="morgan">
+                            <img src="./images/image (1).png" alt="">
+                            <p>@morgan <br> Super Cool Project</p>
+                        </div>
+                        <div class="kendall">
+                            <img src="./images/image (2).png" alt="">
+                            <p>@kendall <br> Life Changing App</p>
+                        </div>
+                        <div class="alex">
+                            <img src="./images/image (3).png" alt="">
+                            <p>@alex <br> No Traffic Maker</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="trending">
-                    <div class="tegan">
-                        <img src="" alt="">
-                        <p>@tegan <br> World Peace Builder</p>
-                    </div>
-                    <div class="morgan">
-                        <img src="" alt="">
-                        <p>@morgan <br> Super Cool Project</p>
-                    </div>
-                    <div class="kendall">
-                        <img src="" alt="">
-                        <p>@kendall <br> Life Changing App</p>
-                    </div>
-                    <div class="alex">
-                        <img src="" alt="">
-                        <p>@alex <br> No Traffic Maker</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1992D4;
+    gap: 22px;
+}
+
+.logo {
+    display: flex;
+    margin: 5px 3px
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.logo-grid div {
+    margin: 5px;
+    width: 10px;
+    background-color: #ffffff;
+}
+.logo p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.list-item1 li, .list-item2 li {
+    list-style-type: none;
+    margin: 20px  auto;
+    gap: 2px;
+    position: relative;
+    right: 28px;
+    display: flex;
+}
+
+.list-item1 li svg path, .list-item2 li svg path {
+    fill: #ffffff;
+}
+
+.list-item1 li a, .list-item2 li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.main-content {
+    display: grid;
+    background-color: #E2E8F0;
+
+}
+
+.header {
+    display: grid;
+    background-color: #ffffff;
+}
+
+.upper-content, .lower-content {
+    display: flex;
+    justify-content: space-around;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    margin: 10px 20px;
+    gap: 20px;
+    height: 30px;
+}
+
+.search input {
+    width: 40vw;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    background-color: #E2E8F0;
+}
+
+.profile-name {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    height: 28px;
+}
+
+.person-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-name h4 {
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.left-name  {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    
+}
+.left-name img {
+    width: 80px;
+    height: 80px;
+}
+
+.left-name  svg {
+    background-color: #FACC15;
+    fill: #ffffff;
+    width: 48px;
+    height: 48px;
+}
+.left-name span {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.navList {
+    width: 28vw;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 30px auto 10px auto;
+}
+.navList li button {
+    border: 2px solid #1992D4;
+    border-radius: 13px;
+    width: 7rem;
+    text-align: center;
+    background-color: #1992D4;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 800;
+    margin: 3px 15px;
+}
+
+.title-project {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin: 10px 30px;
+    font-size: 1.13rem;
+}
+.pro {
+    position: relative;
+    bottom: 5px;
+}
+.ann {
+    position: relative;
+    right:8rem;
+    top: 21px;
+    align-self: flex-end;
+    color: #1992D4;
+}
+.project-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+.card {
+    background-color: #ffffff;
+    border: 0.7px;
+    border-radius: 0.8rem;
+    border-right-color: #FACC15;
+    padding: 15px;
+    margin: 0 20px ;
+    margin-bottom: 14px;
+}
+.card h2, .card p {
+    font-size: 0.8rem;
+}
+
+.card ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.card li {
+    margin-right: 20px;
+}
+
+.announcement-side {
+    display: grid;
+    height: 300px;
+}
+
+.announcement, .trending {
+    background-color: #ffffff;
+    border-radius: 1.2px;
+    font-size: 0.55rem;
+}
+.announcement {
+    padding: 15px;
+    margin-right: 30px;
+}
+.trending-title {
+    font-size: 0.8rem;
+}
+.trending {
+    margin-right: 25px;
+}
+.trending img {
+    width: 50px;
+    height: 50px;
+}
+.trending div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 250px;
+}
+.trending p {
+    font-size: 0.8rem;
+}
